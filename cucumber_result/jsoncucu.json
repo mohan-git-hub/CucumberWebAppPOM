@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": "verify-login-activities-in-amazon;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 61382916400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch Amazon Site",
+            "match": {
+              "location": "LoginTestClass.LaunchAmazonBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22277800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Title of the Page is verified",
+            "match": {
+              "location": "LoginTestClass.VerifyTitle()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19029874600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Login into Amazon",
+            "match": {
+              "location": "LoginTestClass.LoginToAmazon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48148300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify Home Page",
+            "match": {
+              "location": "HomePageTestClass.VerifyUserLogin()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "id": "verify-login-activities-in-amazon;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16000423900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Logout the Amazon application",
+            "match": {
+              "location": "LoginTestClass.LogoutAmazon()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Login Activities in Amazon",
+    "description": "",
+    "id": "verify-login-activities-in-amazon",
+    "keyword": "Feature",
+    "uri": "G:/Mohan/Selenium_Software/WorkSpace/CucumberPOM/src/test/java/com/home/features/LoginActivities.feature"
+  }
+]

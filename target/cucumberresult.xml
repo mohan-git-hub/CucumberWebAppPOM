@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="96.483641">
+<testcase classname="Verify Login Activities in Amazon" name="" time="80.483217">
+<system-out><![CDATA[Given Launch Amazon Site....................................................passed
+When Title of the Page is verified..........................................passed
+Then Login into Amazon......................................................passed
+And Verify Home Page........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Login Activities in Amazon" name="" time="16.000424">
+<system-out><![CDATA[Then Logout the Amazon application..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
