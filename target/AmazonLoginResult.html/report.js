@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("G:/Mohan/Selenium_Software/WorkSpace/CucumberPOM/src/test/java/com/home/features/LoginActivities.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LoginActivities.feature");
 formatter.feature({
   "line": 1,
   "name": "Verify Login Activities in Amazon",
@@ -6,13 +6,12 @@ formatter.feature({
   "id": "verify-login-activities-in-amazon",
   "keyword": "Feature"
 });
-formatter.scenario({
+formatter.background({
   "line": 3,
   "name": "",
   "description": "",
-  "id": "verify-login-activities-in-amazon;",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.step({
   "line": 4,
@@ -29,49 +28,47 @@ formatter.step({
   "name": "Login into Amazon",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 7,
-  "name": "Verify Home Page",
-  "keyword": "And "
-});
 formatter.match({
   "location": "LoginTestClass.LaunchAmazonBrowser()"
 });
 formatter.result({
-  "duration": 61382916400,
+  "duration": 42299337600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTestClass.VerifyTitle()"
 });
 formatter.result({
-  "duration": 22277800,
+  "duration": 20606300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTestClass.LoginToAmazon()"
 });
 formatter.result({
-  "duration": 19029874600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HomePageTestClass.VerifyUserLogin()"
-});
-formatter.result({
-  "duration": 48148300,
+  "duration": 20945175500,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 9,
+  "line": 16,
   "name": "",
   "description": "",
   "id": "verify-login-activities-in-amazon;",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 15,
+      "name": "@Smoke"
+    },
+    {
+      "line": 15,
+      "name": "@Sanity"
+    }
+  ]
 });
 formatter.step({
-  "line": 10,
+  "line": 17,
   "name": "Logout the Amazon application",
   "keyword": "Then "
 });
@@ -79,7 +76,7 @@ formatter.match({
   "location": "LoginTestClass.LogoutAmazon()"
 });
 formatter.result({
-  "duration": 16000423900,
+  "duration": 15177116500,
   "status": "passed"
 });
 });

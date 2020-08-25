@@ -6,13 +6,12 @@
         "line": 3,
         "name": "",
         "description": "",
-        "id": "verify-login-activities-in-amazon;",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 61382916400,
+              "duration": 42299337600,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 22277800,
+              "duration": 20606300,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 19029874600,
+              "duration": 20945175500,
               "status": "passed"
             },
             "line": 6,
@@ -45,23 +44,11 @@
               "location": "LoginTestClass.LoginToAmazon()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 48148300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Verify Home Page",
-            "match": {
-              "location": "HomePageTestClass.VerifyUserLogin()"
-            },
-            "keyword": "And "
           }
         ]
       },
       {
-        "line": 9,
+        "line": 16,
         "name": "",
         "description": "",
         "id": "verify-login-activities-in-amazon;",
@@ -70,15 +57,25 @@
         "steps": [
           {
             "result": {
-              "duration": 16000423900,
+              "duration": 15177116500,
               "status": "passed"
             },
-            "line": 10,
+            "line": 17,
             "name": "Logout the Amazon application",
             "match": {
               "location": "LoginTestClass.LogoutAmazon()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@Smoke"
+          },
+          {
+            "line": 15,
+            "name": "@Sanity"
           }
         ]
       }
@@ -87,6 +84,6 @@
     "description": "",
     "id": "verify-login-activities-in-amazon",
     "keyword": "Feature",
-    "uri": "G:/Mohan/Selenium_Software/WorkSpace/CucumberPOM/src/test/java/com/home/features/LoginActivities.feature"
+    "uri": "LoginActivities.feature"
   }
 ]

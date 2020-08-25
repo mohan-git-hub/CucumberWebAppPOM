@@ -8,13 +8,14 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="G:\\Mohan\\Selenium_Software\\WorkSpace\\CucumberPOM\\src\\test\\java\\com\\home\\features\\LoginActivities.feature"
+		features="G:\\Mohan\\Selenium_Software\\WorkSpace\\CucumberPOM\\src\\test\\java\\com\\home\\features"
 		,glue= {"com.home.StepDefinitions"}
 		,format = {"pretty","html:test-output","json:cucumber_result/jsoncucu.json"}
 		,plugin = {"html:target/AmazonLoginResult.html","junit:target/cucumberresult.xml"}
 		,dryRun = false
 		,monochrome = true
 		,strict = true
+		,tags= {"@Smoke","@Sanity"}
 )
 
 public class TestRunner {

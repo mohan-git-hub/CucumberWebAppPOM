@@ -2,6 +2,7 @@ package com.home.StepDefinitions;
 
 import org.junit.Assert;
 
+import com.home.context.TestContextUI;
 import com.home.pages.HomePage;
 import com.home.pages.LoginPage;
 import com.home.util.TestBase;
@@ -11,7 +12,9 @@ import cucumber.api.java.en.*;
 public class LoginTestClass extends TestBase{
 	
 	LoginPage LP = new LoginPage();
-	HomePage HP = new HomePage();
+	HomePage HP;
+	
+
 
 @Given("^Launch Amazon Site$")
 public void LaunchAmazonBrowser() {

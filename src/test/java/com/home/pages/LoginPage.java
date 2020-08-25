@@ -71,7 +71,6 @@ public class LoginPage extends TestBase {
 		wait.until(ExpectedConditions.elementToBeClickable(SignOutLink));
 		jse.executeScript("arguments[0].click()", SignOutLink);
 		wait.until(ExpectedConditions.visibilityOf(UserNameField));
-		driver.manage().timeouts().implicitlyWait(TestUtil.Element_Load_Timeout, TimeUnit.SECONDS);
 		Thread.sleep(3000);
 		driver.close();
 		driver.quit();
